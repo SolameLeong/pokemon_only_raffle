@@ -1,6 +1,8 @@
+tmp/
+/config.txt
+
 # IntelliJ project files
 .idea
 *.iml
 out
 gen
-tmp/
