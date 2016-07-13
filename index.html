@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="css/raffle.css">
+    <script src="js/vue.js"></script>
+    <script src="js/raffle.js"></script>
+    <title>魔都 Pokemon Only 2016 抽奖</title>
 </head>
 <body>
-    
+<div id="main-container" v-on:click="switch">
+    <div id="bg-leftright" class="bg-element"></div>
+    <div id="raffle-numbers">
+        <div class="raffle-number" v-for="number in numbers" track-by="$index">
+            <div class="number">{{ number }}</div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
