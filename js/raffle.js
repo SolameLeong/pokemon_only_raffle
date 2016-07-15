@@ -57,7 +57,7 @@ window.onload = function () {
                     }
                 }
             }
-            vm.numbers[vm.stopped] = vm.candidates[k];
+            vm.numbers.$set(vm.stopped, vm.candidates[k]);
         }
 
         function shuffle() {
